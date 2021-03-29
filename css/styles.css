@@ -81,23 +81,10 @@ p {
     right: 25%;
 }
 
-@media (max-width: 1028px)
-{
-    #title {
-        text-align: center;
-    }
-
-    .title-img {
-        margin: 1.5rem 0;
-        position: static;
-        transform: rotate(0);
-    }
-}
-
 /* download-buttons */
 
 .download-btn {
-    margin: 5% 3% 5% 0;
+    margin: 5% 1.5% 6.5%;
 }
 
 /* Features */
@@ -141,14 +128,20 @@ p {
     margin: 20px;
 }
 
+/* Press */
+
 #press {
     background-color: #EF8172;
-    padding-bottom: 3%;
+    padding: 2% 8% 4%;
+}
+
+#press > .row {
+    gap: 1.5em;
+    align-items: center;
 }
 
 .press-logo {
-    width: 15%;
-    margin: 20px 25px 50px; 
+    max-width: 225px;
 }
 
 /* Pricing Section */
@@ -174,4 +167,95 @@ p {
 
 .footer-icon {
     margin: 1rem 1rem;
+    color: #212529;
+    text-decoration: none;
+}
+
+@media (max-width: 1268px)
+{
+    #title {
+        text-align: center;
+    }
+
+    .title-img-parent {
+        align-self: center;
+    }
+
+    .title-img {
+        width: 250px;
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+@media (max-width: 650px)
+{
+    .navbar-brand {
+        font-size: 2rem;
+    }
+
+    .navbar {
+        padding-bottom: 3rem;;
+    }
+    
+    .main-heading {
+        font-size: 3rem;
+    }
+
+    .title-img {
+        width: 200px;
+    }
+
+    .testimonial-text, .price-text, .section-heading {
+        font-size: 2.5rem;
+    }
+
+    .press-logo {
+        max-width: 175px;
+    }
+}
+
+@media (max-width: 500px)
+{
+    
+
+    #title .container-fluid {
+        padding: 7% 8% 6%;
+    }
+
+    #pricing {
+        padding: 100px 25px;
+    }
+
+    .testimonial-text {
+        font-size: 2rem;
+    }
+
+    .press-logo {
+        max-width: 125px;
+    }
+
+}
+
+@media (max-width: 350px)
+{
+    .navbar-brand {
+        font-size: 1.7rem;
+    }
+    
+    #title .row > * {
+        padding: 0;
+    }
+    
+    #title .col {
+        padding: 0;
+    }
+
+    .title-img {
+        width: 175px;
+    }
+    
+    .press-logo {
+        max-width: 110px;
+    }
 }
